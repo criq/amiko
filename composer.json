@@ -5,6 +5,7 @@
 	"repositories": [
 		{
 			"url": "https://github.com/criq/katu.git",
+			
 			"type": "git"
 		}
 	],
