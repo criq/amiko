@@ -6,7 +6,7 @@ class Amour {
 
 	static function useMethod($method, $url, $params = array(), &$curl = NULL) {
 		$curl = new \Curl();
-		$curl->$method(\Katu\Utils\URL::make($url, $params));
+		$curl->$method(\Katu\Types\TURL::make($url, $params));
 
 		$response = $curl->response;
 		if (is_array($response)) {
