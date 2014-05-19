@@ -31,7 +31,6 @@ class Amour {
 
 	static function get($url, $params = array(), &$curl = NULL) {
 		return static::useMethod('get', $url, $params, $curl);
-
 	}
 
 	static function post($url, $params = array(), &$curl = NULL) {
