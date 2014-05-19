@@ -9,7 +9,8 @@
 		}
 	],
 	"require": {
-		"jabli/katu": "dev-master"
+		"jabli/katu": "dev-master",
+		"php-curl-class/php-curl-class": "@stable"
 	},
 	"autoload": {
 		"psr-4": {
