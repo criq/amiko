@@ -2,14 +2,7 @@
 	"name": "jabli/amour",
 	"description": "json endpoint",
 	"type": "library",
-	"repositories": [
-		{
-			"url": "https://github.com/criq/katu.git",
-			"type": "git"
-		}
-	],
 	"require": {
-		"jabli/katu": "dev-master",
 		"php-curl-class/php-curl-class": "@stable"
 	},
 	"autoload": {
