@@ -21,9 +21,9 @@ class Amiko {
 		// Error.
 		$array = \Katu\Utils\JSON::decodeAsArray($response);
 		if (isset($array['error']['message'])) {
-			throw new AmourException($array['error']['message']);
+			throw new AmikoException($array['error']['message']);
 		} else {
-			throw new AmourException($curl->error_message, $curl->error_code);
+			throw new AmikoException($curl->error_message, $curl->error_code);
 		}
 
 		return FALSE;
