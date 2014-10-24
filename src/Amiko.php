@@ -6,7 +6,7 @@ class Amiko {
 
 	static function useMethod($method, $url, $params = array(), &$curl = NULL) {
 		$curl = new \Curl();
-		$curl->$method(\Katu\Types\TURL::make($url, $params));
+		$curl->$method(\Katu\Types\TUrl::make($url, $params));
 
 		$response = $curl->response;
 		if (is_array($response)) {
