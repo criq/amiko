@@ -1,14 +1,14 @@
 {
 	"name": "jabli/amiko",
-	"description": "json endpoint",
+	"description": "amiko json endpoint",
 	"type": "library",
-	"require": {
-		"php-curl-class/php-curl-class": "@stable"
+	"require" : {
+		"php": ">=5.3.0"
 	},
 	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
-			"Amiko\\": "./src/"
+			"Amiko\\": "src/"
 		}
 	}
 }
