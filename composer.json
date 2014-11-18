@@ -5,6 +5,7 @@
 	"require": {
 		"php-curl-class/php-curl-class": "@stable"
 	},
+	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
 			"Amiko\\": "./src/"
