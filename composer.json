@@ -1,0 +1,13 @@
+{
+	"name": "jabli/amiko",
+	"description": "json endpoint",
+	"type": "library",
+	"require": {
+		"php-curl-class/php-curl-class": "@stable"
+	},
+	"autoload": {
+		"psr-4": {
+			"Amiko\\": "./src/"
+		}
+	}
+}
