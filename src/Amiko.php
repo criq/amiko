@@ -5,7 +5,11 @@ namespace Amiko;
 class Amiko {
 
 	static function useMethod($method, $url, $params = array(), &$curl = NULL) {
+<<<<<<< HEAD
 		$curl = new \Curl\Curl();
+=======
+		$curl = new \Curl();
+>>>>>>> 2aee96e51a18654905f2a703f66415cacae4480a
 		$curl->$method(\Katu\Types\TUrl::make($url, $params));
 
 		$response = $curl->response;
