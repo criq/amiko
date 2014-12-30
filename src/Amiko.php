@@ -4,7 +4,7 @@ namespace Amiko;
 
 class Amiko {
 
-	static function useMethod($method, $url, $params = array(), &$curl = NULL) {
+	static function useMethod($method, $url, $params = array(), &$curl = null) {
 		$curl = new \Curl\Curl();
 		$curl->$method(\Katu\Types\TUrl::make($url, $params));
 
@@ -26,14 +26,14 @@ class Amiko {
 			throw new AmikoException($curl->error_message, $curl->error_code);
 		}
 
-		return FALSE;
+		return false;
 	}
 
-	static function get($url, $params = array(), &$curl = NULL) {
+	static function get($url, $params = array(), &$curl = null) {
 		return static::useMethod('get', $url, $params, $curl);
 	}
 
-	static function post($url, $params = array(), &$curl = NULL) {
+	static function post($url, $params = array(), &$curl = null) {
 		return static::useMethod('post', $url, $params, $curl);
 	}
 
