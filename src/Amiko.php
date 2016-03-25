@@ -14,7 +14,7 @@ class Amiko {
 		}
 
 		// Success.
-		if ($curl->http_status_code == 200) {
+		if ($curl->httpStatusCode == 200) {
 			return \Katu\Utils\JSON::decodeAsArray($response);
 		}
 
@@ -23,7 +23,7 @@ class Amiko {
 		if (isset($array['error']['message'])) {
 			throw new AmikoException($array['error']['message']);
 		} else {
-			throw new AmikoException($curl->error_message, $curl->error_code);
+			throw new AmikoException($curl->errorMessage, $curl->errorCode);
 		}
 
 		return false;
