@@ -1,5 +1,5 @@
 {
-	"name": "jabli/amiko",
+	"name": "criq/amiko",
 	"description": "amiko json endpoint",
 	"type": "library",
 	"require" : {
